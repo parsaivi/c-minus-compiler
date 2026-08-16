@@ -1,0 +1,20 @@
+/* switch / case / default, break and a forward goto. Prints 20. */
+void main(void) {
+    int x;
+    int y;
+    x = 2;
+    y = 0;
+    switch (x) {
+        case 1:
+            y = y + 10;
+            break;
+        case 2:
+            y = y + 20;
+            goto finish;
+        default:
+            y = y + 30;
+    }
+    y = y + 1;
+    finish:
+    output(y);
+}

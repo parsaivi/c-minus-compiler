@@ -1,0 +1,23 @@
+/* sample 3 */
+
+void main(void){
+    int x = 5;
+    int y = 10;
+    switch (x + y) {
+        case 15: 
+            if (x > y) {
+                a = x;
+            } else {
+                a = y;
+            }
+            break;
+        case 20:
+            while (x < 10) {
+                x = x + 1;
+            }
+            break;
+        default:
+            goto end;
+    }
+    end: return;
+}

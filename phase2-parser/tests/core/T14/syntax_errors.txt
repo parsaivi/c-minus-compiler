@@ -1,0 +1,6 @@
+#4 : syntax error, illegal NUM
+#5 : syntax error, illegal case
+#5 : syntax error, illegal :
+#6 : syntax error, illegal ID
+#6 : syntax error, illegal =
+#6 : syntax error, illegal NUM

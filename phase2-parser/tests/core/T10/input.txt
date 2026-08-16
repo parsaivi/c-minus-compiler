@@ -1,0 +1,23 @@
+void main(void) {
+    int a;
+    a = 0;
+    switch (a) {
+        case 0:
+            a = 1;
+            break;
+        default:
+            a = 2;
+    }
+    a = a * 3;
+    switch (a {   /* خطا: missing ) */
+        case 3:
+            a = 4;
+            break;
+        default:
+            a = 5;
+    }
+    if (a == 4) {
+        a = 6;
+    }
+    return;
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+
+# Compiler artefacts, written next to input.txt in each phase directory
+tokens.txt
+lexical_errors.txt
+symbol_table.txt
+parse_tree.txt
+syntax_errors.txt
+semantic_errors.txt
+output.txt
+input.txt
+
+# Except the ones that belong to a test case or an example
+!*/tests/*/*/*.txt
+!*/examples/*/*.txt

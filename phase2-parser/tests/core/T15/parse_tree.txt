@@ -1,0 +1,68 @@
+Program
+├── DeclarationList
+│   ├── Declaration
+│   │   ├── DeclarationInitial
+│   │   │   ├── TypeSpecifier
+│   │   │   │   └── (KEYWORD, void) 
+│   │   │   └── (ID, main) 
+│   │   └── DeclarationPrime
+│   │       └── FunDeclarationPrime
+│   │           ├── (SYMBOL, () 
+│   │           ├── Params
+│   │           │   └── (KEYWORD, void) 
+│   │           ├── (SYMBOL, )) 
+│   │           └── CompoundStmt
+│   │               ├── (SYMBOL, {) 
+│   │               ├── DeclarationList
+│   │               │   ├── Declaration
+│   │               │   │   └── DeclarationInitial
+│   │               │   │       ├── TypeSpecifier
+│   │               │   │       │   └── (KEYWORD, int) 
+│   │               │   │       └── (ID, a) 
+│   │               │   └── DeclarationList
+│   │               │       ├── Declaration
+│   │               │       │   ├── DeclarationInitial
+│   │               │       │   │   ├── TypeSpecifier
+│   │               │       │   │   │   └── (KEYWORD, int) 
+│   │               │       │   │   └── (ID, b) 
+│   │               │       │   └── DeclarationPrime
+│   │               │       │       └── VarDeclarationPrime
+│   │               │       │           └── (SYMBOL, ;) 
+│   │               │       └── DeclarationList
+│   │               │           └── epsilon
+│   │               ├── StatementList
+│   │               │   ├── Statement
+│   │               │   │   └── OtherStmt
+│   │               │   │       ├── (ID, a) 
+│   │               │   │       └── IdStatementPrime
+│   │               │   │           ├── B
+│   │               │   │           │   ├── (SYMBOL, =) 
+│   │               │   │           │   └── Expression
+│   │               │   │           │       └── SimpleExpressionZegond
+│   │               │   │           │           ├── AdditiveExpressionZegond
+│   │               │   │           │           │   ├── TermZegond
+│   │               │   │           │           │   │   ├── SignedFactorZegond
+│   │               │   │           │           │   │   │   └── FactorZegond
+│   │               │   │           │           │   │   │       └── (NUM, 5) 
+│   │               │   │           │           │   │   └── G
+│   │               │   │           │           │   │       └── epsilon
+│   │               │   │           │           │   └── D
+│   │               │   │           │           │       ├── Addop
+│   │               │   │           │           │       │   └── (SYMBOL, +) 
+│   │               │   │           │           │       ├── Term
+│   │               │   │           │           │       │   ├── SignedFactor
+│   │               │   │           │           │       │   │   └── Factor
+│   │               │   │           │           │       │   │       └── (NUM, 1) 
+│   │               │   │           │           │       │   └── G
+│   │               │   │           │           │       │       └── epsilon
+│   │               │   │           │           │       └── D
+│   │               │   │           │           │           └── epsilon
+│   │               │   │           │           └── C
+│   │               │   │           │               └── epsilon
+│   │               │   │           └── (SYMBOL, ;) 
+│   │               │   └── StatementList
+│   │               │       └── epsilon
+│   │               └── (SYMBOL, }) 
+│   └── DeclarationList
+│       └── epsilon
+└── $

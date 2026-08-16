@@ -1,0 +1,4 @@
+#4 : syntax error, missing DeclarationPrime
+#6 : syntax error, illegal ID
+#6 : syntax error, illegal =
+#6 : syntax error, illegal ID

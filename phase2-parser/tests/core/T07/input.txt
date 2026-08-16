@@ -1,0 +1,30 @@
+/* sample 5 */
+
+int a;
+int b;
+
+void main(void) {
+    a = 5;
+    b = 0;
+    
+    if (a == 0) {
+        goto output_a;
+    } else {
+        goto inside_func;
+    }
+    
+    output_a:
+    output(a);
+    goto return_zero;
+    
+    inside_func:
+    b = a;
+    output(b);
+    b = b + 1;
+    if (b < 10) {
+        goto inside_func;
+    }
+    
+    return_zero:
+    return;
+}

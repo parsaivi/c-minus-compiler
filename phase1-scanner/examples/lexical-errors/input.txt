@@ -1,0 +1,29 @@
+void main (void) {
+    int a = 0;
+    /* comment1*/
+    a = 2 + 2;
+MyLabel:
+    a = a - 3;
+    cde = a;
+    if (b /* comment2 */ == 3d) {
+        a = 3;
+        cd!e = 7;
+    }
+    else */
+    {
+        // one line comment
+        b = a < cde;
+        {cde = @2;
+        }}
+    switch (a) {
+        case 1:
+            b = a * 2;
+        break;
+        case 2:
+            b = a * a;
+        break;
+        default:
+            goto MyLabel;
+    }
+    return; /* comment 3
+}

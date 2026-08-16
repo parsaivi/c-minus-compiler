@@ -1,0 +1,28 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    name: python ${{ matrix.python-version }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # 3.8 is the interpreter the course grades against; 3.12 keeps it honest.
+          - {os: ubuntu-22.04, python-version: '3.8'}
+          - {os: ubuntu-latest, python-version: '3.12'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install anytree (phase 2 only)
+        run: pip install -r requirements.txt
+      - name: Run the regression suite
+        run: python3 tools/run_tests.py

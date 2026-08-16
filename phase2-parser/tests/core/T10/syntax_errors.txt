@@ -1,0 +1,10 @@
+#12 : syntax error, illegal {
+#13 : syntax error, illegal case
+#13 : syntax error, illegal NUM
+#13 : syntax error, illegal :
+#14 : syntax error, illegal ID
+#14 : syntax error, missing )
+#14 : syntax error, missing {
+#14 : syntax error, illegal ;
+#15 : syntax error, illegal break
+#15 : syntax error, illegal ;

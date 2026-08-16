@@ -1,0 +1,23 @@
+int helper(int param) {
+    int result;
+    result = param * 2;
+    if (result > 10) {
+        case 5:   /* خطا: case خارج از switch */
+            result = 5;
+    } else {
+        result = 0;
+    }
+    return result;
+}
+void main(void) {
+    int x;
+    x = helper(7);
+    switch (x) {
+        case 10:
+            x = 20;
+            break;
+        default:
+            x = 0;
+    }
+    return;
+}

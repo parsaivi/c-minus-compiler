@@ -1,0 +1,30 @@
+void main(void) {
+    int val;
+    val = 0;
+    start:
+    val = val + 1;
+    switch (val) {
+        case 1:
+            val = val * 10;
+        case 10:
+            val = val + 5;
+        case 15:
+            if (val > 20) {
+                goto end;
+            }
+            break;
+        case 2:
+            val = 100;
+            goto restart;
+        default:
+            val = val - 1;
+    }
+    if (val < 20) {
+        goto start;
+    }
+    restart:
+    val = 0;
+    goto start;
+    end:
+    return;
+}

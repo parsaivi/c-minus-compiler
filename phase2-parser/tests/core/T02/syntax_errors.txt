@@ -1,0 +1,2 @@
+#7 : syntax error, missing ID
+#7 : syntax error, missing ;

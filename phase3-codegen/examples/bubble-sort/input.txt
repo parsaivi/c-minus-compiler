@@ -1,0 +1,36 @@
+/* Arrays, nested while loops and an array parameter passed by reference.
+   Prints 1 2 5 8 9, one value per line. */
+void sort(int a[], int n) {
+    int i;
+    int j;
+    int tmp;
+    i = 0;
+    while (i < n) {
+        j = 0;
+        while (j < n - 1) {
+            if (a[j + 1] < a[j]) {
+                tmp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = tmp;
+            }
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+}
+
+void main(void) {
+    int data[5];
+    int k;
+    data[0] = 5;
+    data[1] = 2;
+    data[2] = 9;
+    data[3] = 1;
+    data[4] = 8;
+    sort(data, 5);
+    k = 0;
+    while (k < 5) {
+        output(data[k]);
+        k = k + 1;
+    }
+}

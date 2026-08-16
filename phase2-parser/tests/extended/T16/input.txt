@@ -1,0 +1,25 @@
+/* T16: array init, multi-param function, nested expressions */
+int max(int a, int b) {
+    if (a < b) {
+        return b;
+    }
+    return a;
+}
+
+void main(void) {
+    int arr[5];
+    int i;
+    int result;
+    arr[0] = 3;
+    arr[1] = 7;
+    arr[2] = 2;
+    arr[3] = 9;
+    arr[4] = 4;
+    i = 0;
+    result = arr[0];
+    while (i < 5) {
+        result = max(result, arr[i]);
+        i = i + 1;
+    }
+    return;
+}

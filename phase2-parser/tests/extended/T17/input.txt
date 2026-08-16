@@ -1,0 +1,11 @@
+/* T17: syntax errors - missing semicolons and misplaced tokens */
+void main(void) {
+    int x
+    int y;
+    x = 5
+    y = x + 3;
+    if (x < y) {
+        x = y;
+    }
+    return;
+}

@@ -1,0 +1,18 @@
+/* Triggers all six semantic checks, one per line.
+   output.txt is intentionally left empty of code. */
+void v;                     /* void type for a variable        */
+
+int f(int a, int b) {
+    return a;
+}
+
+void main(void) {
+    int x;
+    int arr[5];
+    x = y;                  /* undefined variable              */
+    x = f(1);               /* wrong number of arguments       */
+    x = f(1, arr);          /* wrong type of argument 2        */
+    break;                  /* break with no enclosing while   */
+    x = x + arr;            /* type mismatch in operands       */
+    output(x);
+}

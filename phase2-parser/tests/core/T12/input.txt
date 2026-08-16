@@ -1,0 +1,9 @@
+void main(void) {
+    int x;
+    x = 0;
+    top:
+    x = x + 1;
+    if (x < 5) {
+        goto top;
+    }
+}

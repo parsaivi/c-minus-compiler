@@ -1,0 +1,7 @@
+void main(void) {
+    int arr[5];
+    int i;
+    i = 0;
+    arr[0] = 10;
+    arr[1] = arr[0] + 1;
+}

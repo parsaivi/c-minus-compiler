@@ -1,0 +1,44 @@
+int calc(int mode) {
+    int result;
+    result = 0;
+    loop:
+    if (mode == 0) {
+        result = result + 1;
+        mode = 1;
+        goto loop;
+    } else {
+        if (mode == 1) {
+            result = result * 2;
+            mode = 2;
+            goto loop;
+        } else {
+            goto done;
+        }
+    }
+    done:
+    return result;
+}
+void main(void) {
+    int x;
+    int y;
+    x = calc(0);
+    y = 0;
+    entry:
+    switch (x) {
+        case 2:
+            y = y + x;
+            x = x - 1;
+            goto entry;
+        case 4:
+            y = y * 2;
+            goto skip;
+        default:
+            y = 0;
+    }
+    skip:
+    if (y < 20) {
+        x = calc(1);
+        goto entry;
+    }
+    return;
+}

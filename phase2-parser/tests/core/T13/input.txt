@@ -1,0 +1,20 @@
+/* sample 4 */
+
+int b;
+int a;
+
+void main(void){
+b = 3;
+a = 0;
+while (a < 10) {
+if (a == 6) {
+    output(a);
+    break;
+}
+a = a + 2;
+}
+int ;
+{
+}
+{{}}
+}

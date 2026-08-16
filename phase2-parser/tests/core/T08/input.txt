@@ -1,0 +1,43 @@
+void main(void) {
+    int flag;
+    int total;
+    flag = 1;
+    total = 0;
+    flag:
+    total = total + flag;
+    switch (flag) {
+        case 1:
+            flag = 2;
+            goto flag;
+        case 2:
+            flag = 3;
+            total = total * 10;
+            break;
+        case 3:
+            total = total + 5;
+            if (total < 100) {
+                goto next;
+            } else {
+                goto finish;
+            }
+        default:
+            flag = 1;
+            goto flag;
+    }
+    next:
+    switch (total) {
+        case 50:
+            flag = 4;
+            break;
+        case 75:
+            flag = 5;
+            break;
+        default:
+            flag = 1;
+    }
+    if (flag != 1) {
+        goto flag;
+    }
+    finish:
+    return;
+}

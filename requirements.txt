@@ -1,0 +1,4 @@
+# Phase 2 renders its parse tree with anytree, the one third-party library the
+# assignment permits. Phase 3 replaces it with an equivalent implemented in the
+# file itself, so the finished compiler needs nothing beyond the standard library.
+anytree

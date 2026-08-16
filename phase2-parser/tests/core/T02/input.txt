@@ -1,0 +1,17 @@
+void main(void) {
+    int count;
+    count = 0;
+    loop:
+    count = count + 1;
+    if (count < 10) {
+        goto 123;   /* خطا: انتظار ID اما NUM دیده می‌شود */
+    } else {
+        goto finish;
+    }
+    if (count == 5) {
+        count = count * 2;
+    }
+    finish:
+    count = 0;
+    return;
+}

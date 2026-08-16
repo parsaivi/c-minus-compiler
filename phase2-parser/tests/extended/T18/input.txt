@@ -1,0 +1,26 @@
+/* T18: switch inside while, break, goto, variable init */
+int counter;
+
+void main(void) {
+    int x = 0;
+    int done = 0;
+    counter = 10;
+    loop:
+    while (x < counter) {
+        switch (x) {
+            case 3:
+                done = 1;
+                break;
+            case 7:
+                counter = counter - 1;
+                break;
+            default:
+                x = x + 1;
+        }
+        if (done == 1) {
+            goto end;
+        }
+    }
+    end:
+    return;
+}

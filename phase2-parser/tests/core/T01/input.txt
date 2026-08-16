@@ -1,0 +1,47 @@
+void main(void) {
+    int state;
+    int counter;
+    state = 0;
+    counter = 0;
+    start:
+    counter = counter + 1;
+    switch (state) {
+        case 0:
+            if (counter < 5) {
+                state = 1;
+                goto process;
+            } else {
+                state = 2;
+                goto process;
+            }
+        case 1:
+            while (counter < 10) {
+                counter = counter + 2;
+                if (counter == 7) {
+                    goto finish;
+                }
+            }
+            break;
+        case 2:
+            state = 0;
+            counter = 0;
+            goto start;
+        default:
+            state = 0;
+            goto start;
+    }
+    process:
+    switch (state) {
+        case 1:
+            state = 2;
+            goto start;
+        case 2:
+            state = 0;
+            counter = counter * 2;
+            goto start;
+        default:
+            goto finish;
+    }
+    finish:
+    return;
+}

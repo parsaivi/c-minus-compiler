@@ -1,0 +1,137 @@
+/* sample 8 */
+
+int a;
+int b;
+int c[10];
+
+void main(void){
+    int x;
+    int y;
+    
+    x = 0;
+    y = 5;
+    
+    // Missing semicolons
+    x = y + 1
+    y = x * 2
+    
+    // Missing parentheses
+    if x == 10 {
+        y = y + 1;
+    } else {
+        y = y - 1;
+    }
+    
+    // Missing closing brace
+    while (x < 10) {
+        x = x + 1;
+        if (x == 5) {
+            break;
+    
+    // Switch with errors
+    switch (x) {
+        case 1: y = 10;
+        case 2: y = 20
+        default: y = 30
+    }
+    
+    // Invalid array access
+    c[ = 10;
+    c[10] = ;
+    c[] = 5;
+    c[5] = x + ;
+    
+    // Missing condition in while
+    while () {
+        x = x + 1;
+    }
+    
+    // Missing expression in return
+    return;
+    return ;
+    return +;
+    
+    // Label errors
+    label1:
+    label2
+    x = x + 1;
+    goto 
+    goto label1
+    goto undefined;
+    
+    // Invalid declarations
+    int 
+    int x, ;
+    int = 10;
+    int arr[;
+    int arr[] = {1,2,3};
+    
+    // Invalid expressions
+    x = + y;
+    x = y +;
+    x = * y;
+    x = y *;
+    x = (y + ;
+    x = y + );
+    
+    // Invalid comparisons
+    if (x == ) {
+        y = 10;
+    }
+    if ( == 5) {
+        y = 10;
+    }
+    if (x = 5) {
+        y = 10;
+    }
+    
+    // Nested errors
+    if (x > 0) {
+        switch (y) {
+            case 1: 
+                while (z < 10 {
+                    z = z + 1;
+                }
+            case 2:
+                if (z == 5 {
+                    goto label3
+            default:
+                return
+        }
+    }
+    
+    // Unclosed blocks
+    if (x == 5) {
+        y = 10;
+    
+    // Extra closing brace
+    }
+    }
+    
+    // Invalid tokens
+    x = y @ 5;
+    z = #x;
+    w = $y;
+    v = 12ab;
+    
+    // Comments with errors
+    /* Unclosed comment
+    x = 5;
+    y = 10; */
+    z = 15;
+    /*/ Invalid comment */
+    
+    // Multiple statements without separation
+    x = 5 y = 10 z = 15
+    
+    // Invalid case labels
+    switch (x) {
+        case a: y = 10;
+        case 1.5: z = 20;
+        case 'a': w = 30;
+        default: v = 40;
+    }
+    
+    label3:
+    return;
+}
